@@ -142,9 +142,18 @@ def problem1(n):
     answer = fibonacci(1)
     for k in range(1,n+1):
         if fibonacci(k) >= n:
-            return answer
+         return answer
         answer = fibonacci(k)
     return  answer
+   # fibo = [0, 1, 1,2]
+   # for j in range(3,1000):
+     #   fibo[j]= fibo[j-2]+fibo[j-1]
+   # answer= 1
+    #for k in range(1,n+1):
+    #    if fibo[k] >= n:
+     #       return answer
+    #    answer = fibo[k]
+   # return answer
 
 
 

@@ -17,7 +17,7 @@ def main():
 
 
 ###############################################################################
-# TODO: 2.  READ the doc-string for the   is_prime   function defined below.
+# DONE: 2.  READ the doc-string for the   is_prime   function defined below.
 # It is the same as you have seen before.
 # After you UNDERSTAND the doc-string (JUST the doc-string, NOT the code),
 # ASKING QUESTIONS AS NEEDED, change the above _TODO_ to DONE.
@@ -145,9 +145,20 @@ def problem5(seq_of_seq):
       :rtype: (list of int) | int
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    list = []
+    for k in range(len(seq_of_seq)):
+        sublist = seq_of_seq[k]
+        a = -9999999999
+        for j in range(len(sublist)):
+            if sublist[j] > a:
+                a = sublist[j]
+            if j is (len(sublist)-1):
+                list = list + [a]
+
+    return list
 
 
 ###############################################################################
