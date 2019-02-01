@@ -3,9 +3,9 @@ Exam 3, problem 2.
 
 Authors: Vibha Alangar, Aaron Wilkin, David Mutchler, Dave Fisher, 
          Matt Boutell, Amanda Stouder, their colleagues and 
-         PUT_YOUR_NAME_HERE.  January 2019.
+         Aidan Moss.  January 2019.
 
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -62,7 +62,7 @@ def shape(n):
 
     And this one for n=9:
 111111111*
-22222222*1
+22222222*1 k=2 n =9
 3333333*12
 444444*123
 55555*1234
@@ -74,12 +74,21 @@ def shape(n):
     :type n: int
     """
     # ------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #          Some tests are already written for you (above).
     ####################################################################
     # IMPORTANT: In your final solution for this problem,
     #   you must NOT use string multiplication.
     ####################################################################
+    for k in range(1,n+1):
+
+        for j in range(n-k+1):
+            print(k,end = '')
+        print('*',end= '')
+        for h in range(k-1):
+            print(h+1,end = '')
+
+        print("")
 
 
 # ----------------------------------------------------------------------
